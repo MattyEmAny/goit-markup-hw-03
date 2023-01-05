@@ -1,0 +1,118 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+
+:root {
+  --buttons-background-color: #2196f3;
+  --buttons-text-color: #fff;
+  --links-color: #2196f3;
+  --no-main-color: #757575;
+}
+
+.link:hover {
+  /* background-color: #2196f3; */
+  color: var(--links-color);
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--buttons-background-color);
+  color: var(--buttons-text-color);
+}
+
+.no-main-color {
+  color: var(--no-main-color);
+}
+
+.contacts {
+  text-decoration: none;
+  color: var(--no-main-color);
+}
+
+.navi {
+  text-decoration: none;
+}
+
+.studio {
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  color: #000000;
+}
+.studio-color {
+  color: var(--links-color);
+}
+
+.bookmarks {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 1.36;
+  font-weight: 900;
+}
+
+.order-button {
+  font-size: 16px;
+  line-height: 1.88;
+  font-weight: 700;
+}
+
+.service {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+}
+
+.service-description {
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.17;
+  font-weight: 700;
+}
+
+.member {
+  font-size: 16px;
+  line-height: 1.19;
+  font-weight: 500;
+}
+
+.function {
+  font-size: 16px;
+  line-height: 1.19;
+  font-weight: 400;
+}
+
+.foots {
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 400;
+}
+
+.filtr-buttons {
+  font-size: 16px;
+  line-height: 1.63;
+  font-weight: 500;
+}
+
+.images-names {
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+}
+
+.images-categories {
+  font-size: 16px;
+  line-height: 1.88;
+  font-weight: 400;
+}
