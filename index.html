@@ -11,10 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="container flex">
       <a class="studio"><b class="studio-color">Web</b>Studio</a>
 
       <nav>
@@ -25,23 +32,26 @@
         </ul>
       </nav>
 
-      <a class="link contacts bookmarks" href="mailto:info@devstudio.com"
+      <a class="link contacts link-mail" href="mailto:info@devstudio.com"
         >info@devstudio.com</a
       >
-      <a class="link contacts bookmarks" href="tel:+48111111111"
+      <a class="link contacts link-tel" href="tel:+48111111111"
         >+48 111 111 111</a
       >
     </header>
 
     <main>
-      <section>
-        <h1>Efektywne rozwiązania dla waszego biznesu</h1>
+      <section class="container field-h1">
+        <h1>
+          EFEKTYWNE ROZWIĄZANIA<br />
+          DLA NASZEGO BIZNESU
+        </h1>
 
         <button class="button order-button" type="button">Zamów usługę</button>
       </section>
 
-      <section>
-        <ul>
+      <section class="container">
+        <ul class="fields-h5">
           <li>
             <h5 class="service">LOREM IPSUM</h5>
             <p class="no-main-color service-description">
@@ -73,9 +83,9 @@
         </ul>
       </section>
 
-      <section>
+      <section class="container">
         <h2>Czym się zajmujemy</h2>
-        <ul>
+        <ul class="fields-h2">
           <li>
             <img
               width="370"
@@ -103,9 +113,9 @@
         </ul>
       </section>
 
-      <section>
+      <section class="container team">
         <h2>Nasz zespół</h2>
-        <ul>
+        <ul class="fields-h2">
           <li>
             <figure>
               <img
@@ -138,7 +148,7 @@
             <figure>
               <img
                 width="270"
-                eight="260"
+                height="260"
                 src="./images/img6.jpg"
                 alt="John Doe Marketing"
               />
@@ -166,7 +176,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="container">
       <a class="studio"><b class="studio-color">Web</b>Studio</a>
       <address class="foots">m. Warszawa, Aleje Jerozolimskie 21</address>
       <p>
