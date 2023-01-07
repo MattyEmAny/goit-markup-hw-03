@@ -8,10 +8,13 @@ body {
   --buttons-text-color: #fff;
   --links-color: #2196f3;
   --no-main-color: #757575;
+  --header-studio: #000;
+  --footer-studio: #fff;
 }
 
 header {
   padding: 0 15px;
+  border-bottom: 1px solid #ececec;
 }
 .flex {
   display: flex;
@@ -19,12 +22,10 @@ header {
 }
 
 .container {
-  /* width: 1200px; */
   max-width: 1200px;
 }
 
 .link:hover {
-  /* background-color: #2196f3; */
   color: var(--links-color);
 }
 
@@ -52,10 +53,11 @@ header {
   font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
-  color: #000000;
+  color: var(--header-studio);
   margin-top: 24px;
   margin-right: 93px;
   margin-bottom: 25px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .studio-color {
   color: var(--links-color);
@@ -117,8 +119,6 @@ h1 {
 
 .fields-h5 > li {
   list-style: none;
-  /* display: inline-block;
-  flex-direction: column; */
   width: 270px;
 }
 
@@ -136,9 +136,6 @@ h1 {
 
 .fields-h2 > li {
   list-style: none;
-  /* display: inline-block; */
-  /* flex-direction: column; */
-  /* width: 270px; */
 }
 
 .fields-h2 > li:not(:last-child) {
@@ -161,9 +158,6 @@ figure {
 }
 
 .team figure {
-  /* border: 1px solid black; */
-  /* border-radius: 0 0 4% 4% solid green; */
-  /* background-color: #fff; */
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -178,6 +172,9 @@ figure {
   padding: 10px 41px;
   display: inline-block;
   margin: 0 auto;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .service {
@@ -245,26 +242,66 @@ p {
 
 address {
   margin: 20px 0 0 0;
+  font-style: normal;
 }
 
 footer > p {
   margin: 9px 0 0 0;
 }
 
+.white {
+  color: var(--footer-studio);
+}
+
 .filtr-buttons {
   font-size: 16px;
   line-height: 1.63;
   font-weight: 500;
+  width: 572px;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 94px 310px 0 310px;
+}
+
+.filtr-buttons > li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filtr-buttons button {
+  border: 0;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .images-names {
   font-size: 18px;
   line-height: 2;
   font-weight: 700;
+  margin: 0;
 }
 
 .images-categories {
   font-size: 16px;
   line-height: 1.88;
   font-weight: 400;
+  margin-top: 4px;
+}
+
+.card-set {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 1177px;
+  margin: 50px 8px 94px 15px;
+  padding: 0;
+}
+
+.images-caption {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  /* margin: 0; */
+  padding: 20px 24px;
 }
