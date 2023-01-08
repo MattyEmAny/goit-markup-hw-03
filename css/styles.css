@@ -10,11 +10,17 @@ body {
   --no-main-color: #757575;
   --header-studio: #000;
   --footer-studio: #fff;
+  --border-line: #ececec;
+  --border-color: #eee;
+  --h1-text: #fff;
+  --dark-background: #2f303a;
+  --team-background: #f5f4fa;
+  --figcaption-background: #fff;
 }
 
 header {
   padding: 0 15px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-line);
 }
 .flex {
   display: flex;
@@ -98,8 +104,8 @@ header {
   flex-direction: column;
   justify-content: center;
   height: 600px;
-  background-color: #2f303a;
-  color: #fff;
+  background-color: var(--dark-background);
+  color: var(--h1-text);
 }
 
 h1 {
@@ -107,6 +113,7 @@ h1 {
   line-height: 1.36;
   font-weight: 900;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .fields-h5 {
@@ -149,7 +156,7 @@ figure {
 }
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--team-background);
   padding-bottom: 94px;
 }
 
@@ -218,13 +225,13 @@ h2 {
 }
 
 .team figcaption {
-  background-color: #fff;
+  background-color: var(--figcaption-background);
   border-radius: 0px 0px 4px 4px;
 }
 
 footer {
-  background-color: #2f303a;
-  color: #fff;
+  background-color: var(--dark-background);
+  color: var(--h1-text);
   margin: 0;
   padding: 60px 0 60px 15px;
 }
@@ -299,9 +306,8 @@ footer > p {
 }
 
 .images-caption {
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  /* margin: 0; */
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
   padding: 20px 24px;
 }
